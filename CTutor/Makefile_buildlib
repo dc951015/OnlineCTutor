@@ -1,0 +1,11 @@
+.PHONY:run
+.PHONY:build
+libsample.so: sample.c
+	gcc -Wall sample.c -fPIC -shared -o libsample.so -lc -ldl
+	gcc -Wall -c -o sample.o sample.c -lc -ldl
+	ar rcs libsample.a sample.o
+
+clean:
+	-rm libsample.so
+	-rm libsample.a
+	-rm sample.o
