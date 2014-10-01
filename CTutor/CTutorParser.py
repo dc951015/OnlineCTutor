@@ -16,6 +16,16 @@ class CParser(object):
     "fwrite",
     "fputs",
     "scanf",
+    "fork",
+    "exec",
+    "pthread_create",
+    "execvp",
+    "getpid",
+    "execl",
+    "execlp",
+    "execle",
+    "execv",
+    "execve"
   ]
 
   def __init__(self, fn):
