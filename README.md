@@ -76,5 +76,5 @@ TODO
 Unexpected behaviors
 ---_--
 
-- printf string without `\n`: newline charactor will be used to flush the stdout to the terminal, therefore if the printf string does not end with `\n`, the string will not be immediately output to the console. See testcase No. `0000`.
+- printf string without `\n`: newline character will be used to flush the stdout to the terminal, therefore if the printf string does not end with `\n`, the string will not be immediately output to the console. See testcase No. `0000`.
 - When deploy on Aliyun Cloud, LLDB will suffer an run fail issue in _start function after loading the binary and start to run it  
